@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        
+        <!-- hide -->
+ 		<LinearLayout 
+ 		    android:id="@+id/alertDialogPopupWindow_LLoutTitleLayoutId"
+ 		    android:layout_width="fill_parent"
+ 		    android:layout_height="35dp"
+ 		    android:orientation="horizontal"
+ 		    android:visibility="gone"
+ 		    >
+ 		
+ 		    <!-- hide -->
+ 		    <LinearLayout 
+ 		        android:id="@+id/alertDialogPopupWindow_IconContentId"
+ 		        android:layout_width="wrap_content"
+ 		        android:layout_height="fill_parent"
+ 		        android:orientation="vertical"
+ 		        android:visibility="gone"
+ 		        >
+ 		          <ImageView 
+	 		        android:id="@+id/alertDialogPopupWindow_IconId"
+	 		        android:layout_width="30px"
+	 		        android:layout_height="30px"
+	 		        android:padding="0px"
+	 		        />
+ 		    </LinearLayout>
+ 		  
+ 		    <View 
+ 		        android:id="@+id/alertDialogPopupWindow_Title_leftPaddingId"
+ 		        android:layout_width="1px"
+ 		        android:layout_height="fill_parent"
+ 		        />
+ 		    <!-- hide -->
+ 		   	<TextView 
+		       android:id="@+id/alertDialogPopupWindow_tvTitleId"
+		       android:layout_width="fill_parent"
+		       android:layout_height="fill_parent"
+		       android:textColor="#ff0000"
+		       android:padding="0dp"
+		       android:gravity="center"
+		       android:text="我是警告"
+		       android:visibility="gone"
+		       /> 
+ 		</LinearLayout>
+     
+		<!-- hide -->
+	    <TextView 
+	        android:id="@+id/alertDialogPopupWindow_tvMessageId"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textColor="#ff0000"
+	        android:padding="0dp"
+	        android:textSize="12sp"
+	        android:gravity="center"
+	        android:text="我是消息"
+	        android:visibility="gone"
+	        />
+	    <LinearLayout 
+	        android:id="@+id/alertDialogPopupWindow_viewContentId"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="0dp"
+	        android:gravity="center_vertical"
+	        android:visibility="visible"
+	        >
+	        <View 
+	            android:layout_width="fill_parent"
+	            android:layout_height="10dp"
+	            />
+	    </LinearLayout>
+	    <!-- hide -->
+	    <GridView 
+	        android:id="@+id/alertDialogPopupWindow_gvMenuId"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="0dp"
+	        android:visibility="gone"
+	        ></GridView>
+    
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        >
+	        <!-- hide -->
+	        <Button 
+	            android:id="@+id/alertDialogPopupWindow_tvPositiveId"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:padding="0dp"
+	            android:text="确定"
+	            android:layout_weight="1"
+	            android:visibility="gone"
+	            />
+	        <!-- hide -->
+	        <Button 
+	            android:id="@+id/alertDialogPopupWindow_tvNegativeId"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	             android:padding="0dp"
+	            android:text="取消"
+	            android:layout_weight="1"
+	            android:visibility="gone"
+	            />
+	    </LinearLayout>  
+    </LinearLayout>
+    
+ 	
+</LinearLayout>

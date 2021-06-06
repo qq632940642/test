@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+多个标签中存在相同的属性事：Keyboard为此标签中没有时的默认值
+	Keyboard标签属性：
+     keybackground默认的按键背景, 必须设置 
+	
+
+	Row标签属性
+
+	Key标签属性
+
+
+-->
+
+
+
+
+
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    keyWidth="71" keyHeight="71"
+    horizontalGap="1" verticalGap="4"
+    background="keyboard_drawable"
+    repeatable="false"
+    >
+
+    <Row marginLeft="5" marginRight="0">
+        <Key codes="49" keyLabel="1"/>
+        <Key codes="50" keyLabel="2"/>
+        <Key codes="51" keyLabel="3"/>
+        <Key codes="52" keyLabel="4"/>
+        <Key codes="53" keyLabel="5"/>
+        <Key codes="54" keyLabel="6"/>
+        <Key codes="55" keyLabel="7"/>
+        <Key codes="56" keyLabel="8"/>
+        <Key codes="57" keyLabel="9"/>
+        <Key codes="48" keyLabel="0"/>
+        <Key codes="27" keyIcon="sym_keyboard_delete" repeatable="true"/>
+    </Row>
+    
+    <Row marginLeft="23" marginRight="0">
+        <Key codes="113" keyLabel="q" />
+        <Key codes="119" keyLabel="w"/>
+        <Key codes="101" keyLabel="e"/>
+        <Key codes="114" keyLabel="r"/>
+        <Key codes="116" keyLabel="t"/>
+        <Key codes="121" keyLabel="y"/>
+        <Key codes="117" keyLabel="u"/>
+        <Key codes="105" keyLabel="i"/>
+        <Key codes="111" keyLabel="o"/>
+        <Key codes="112" keyLabel="p" />
+       
+        <Key codes="10"  weight="0.7" repeatable="false" background="null" />
+    </Row>
+    
+    <Row marginLeft="45" marginRight="0">
+    	<Key codes="97"  keyLabel="a" />
+        <Key codes="115" keyLabel="s" />
+        <Key codes="100" keyLabel="d" />
+        <Key codes="102" keyLabel="f" />
+        <Key codes="103" keyLabel="g" />
+        <Key codes="104" keyLabel="h" />
+        <Key codes="106" keyLabel="j" />
+        <Key codes="107" keyLabel="k" />
+        <Key codes="108" keyLabel="l" />
+        
+        <Key codes="10" weight="1.4"  repeatable="false" keyIcon="sym_keyboard_return_icon"
+        	background="keyboard_return_drawable" offTop="-1.00" />
+        <!-- offLeft="-0.70" offBottom="1.05" -->
+    </Row>
+    
+   <Row marginLeft="5" marginRight="0">
+    	<Key codes="1" keyIcon="sym_keyboard_shift" weight="1.25" repeatable="false"/>
+        <Key codes="122" keyLabel="z"/>
+        <Key codes="120" keyLabel="x"/>
+        <Key codes="99" keyLabel="c"/>
+        <Key codes="118" keyLabel="v"/>
+        <Key codes="98" keyLabel="b"/>
+        <Key codes="110" keyLabel="n"/>
+        <Key codes="109" keyLabel="m"/>
+        <Key codes="32" weight="2.75" keyIcon="sym_keyboard_space"/>
+    </Row>
+</Keyboard>
